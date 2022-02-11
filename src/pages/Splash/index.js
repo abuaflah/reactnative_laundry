@@ -3,11 +3,11 @@ import React, { useEffect } from 'react'
 import { Backgroundsplash, Logo } from '../../assets'
 
 const Splash = ({ navigation }) => {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     navigation.replace('MainApp');
-  //   },10000)
-  // }, [navigation]);
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('MainApp');
+    }, 5000)
+  }, [navigation]);
 
   return (
     <ImageBackground source={Backgroundsplash} style={styles.background}>
